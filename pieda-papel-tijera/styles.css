@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+:root {
+  --clr-clay: #f19e59;
+  --clr-green: #1F8A70;
+  --clr-dark: #00425A;
+}
+
+body {
+  background-color: var(--clr-dark);
+  color: var(--clr-clay);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-clay);
+  color: var(--clr-dark);
+  padding: 1rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.win-condition {
+  margin: 2.5rem 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.win-condition h2{
+  margin: 2.5rem 0;
+}
+
+.score {
+  background-color: var(--clr-green);
+  font-size: 1.5rem;
+  color: var(--clr-dark);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.score .name{
+  position: absolute;
+  background-color: #00425A;
+  line-height: .7;
+  padding: .5rem;
+  border: 0.2rem solid var(--clr-green);
+  border-radius: .5rem;
+  color: var(--clr-clay);
+}
+
+.score .player-name {
+  right: 85%;
+}
+
+.score .computer-name {
+  left: 85%
+}
+
+.score .points {
+  font-size: 3rem;
+}
+.choose-your-weapon {
+  margin-bottom: 2.5rem;
+}
+
+.choose-your-weapon h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.weapons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.weapon {
+  font-size: 2rem;
+  padding: .5rem;
+  border:  .3rem var(--clr-green);
+  border-radius: .5rem;
+  background-color: var(--clr-clay);
+  cursor: pointer;
+  transition: 
+    transform .3s ease-in-out;
+
+}
+
+.weapon:hover {
+  transform: translate(0, -.3rem)
+
+}
+
+.message {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  
+}
+
+.message .choice {
+  color: var(--clr-clay);
+  background-color: #1F8A70;
+  border-radius: .3rem;
+  padding-inline: .3rem;
+}
+
+#point-gained {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 2rem;
+
+}
+
+.btn {
+  border: 0;
+  line-height: 1;
+  background-color: var(--clr-clay);
+  color: #00425A;
+  font-size: 1.2rem;
+  padding: .5rem;
+  border-radius: .3rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.disabled {
+  display: none;
+}

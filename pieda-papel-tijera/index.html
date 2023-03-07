@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+   
+	<header>
+    	<div>
+      	<h1>Piedra, papel o tijera</h1>
+    	</div>
+  </header>
+	<main>
+		<p class="win-condition" id="win-condition">
+			El primero que llega a 5 puntos gana. 
+		</p>
+		<div class="score">
+			<p class="name player-name">Jugador</p>
+			<p class="name computer-name">Computadora</p>
+			<p class="points">	
+				<span class="player-score" id="player-score">0</span>
+				<span>-</span>
+				<span class="computer-score" id="computer-score">0</span>
+			</p>
+		</div>
+		<div class="choose-your-weapon" id="choose-your-weapon">
+			<h2>Elegí tu arma para el combate!</h2>
+			<div class="weapons">
+				<button class="weapon" id="piedra⛰">⛰</button>
+				<button class="weapon" id="papel🧻">🧻</button>
+				<button class="weapon" id="tijera✂">✂</button>
+			</div>
+		</div>
+		<div class="message disabled" id="message">
+			<p>
+				Elegiste <span class="choice" id="player-choice"></span>, la computadora eligió <span class="choice" id="computer-choice"></span>
+			</p>
+			<p id="point-gained"></p>
+		</div>
+		<button class="btn disabled" id="restart">Reiniciar juego</button>
+	</main>
+
+</body>
+</html>
